@@ -9,7 +9,7 @@
 * Open a CMD or powershell or bash and type the following commands :
 ```powershell
 pip install cookiecutter
-cookiecutter https://github.com/Alvar-F/python-cookiecutter.git
+cookiecutter [https://github.com/Alvar-F/python-cookiecutter.git]
 ```
 
 ## Django project features
