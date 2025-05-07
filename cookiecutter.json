@@ -1,0 +1,7 @@
+{
+    "project_name": "My python Project",
+    "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '')|replace('-', '')|replace('.', '')|trim() }}",
+    "__project_dist_name": "safranae-{{ cookiecutter.project_slug }}",
+    "description": "",
+    "gitlab_group": ""
+}

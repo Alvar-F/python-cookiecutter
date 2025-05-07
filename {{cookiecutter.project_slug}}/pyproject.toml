@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "{{ cookiecutter.__project_dist_name }}"
+dynamic = ["version"]
+description = "{{ cookiecutter.description }}"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "hatch",
+    "sphinx",
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+]
+
+[tool.hatch.version]
+path = "src/{{ cookiecutter.project_slug }}/__version__.py"
+
+[tool.hatch.build]
+sources = ["src"]
+packages = ["src/{{ cookiecutter.project_slug }}"]
+exclude = [
+    "/docs",
+    "/tests",
+    ".gitlab-ci.yml",
+    "sonar-project.properties",
+    "requirements.txt",
+]
+
+

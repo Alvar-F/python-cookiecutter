@@ -1,0 +1,1 @@
+# How-to contribute to {{ cookiecutter.project_name }}
